@@ -1,0 +1,11 @@
+figure{
+    width: 25%;
+    border-style: solid;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    border-color: green;
+}
+figure figcaption{
+    color: grey;
+}
