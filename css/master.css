@@ -1,0 +1,62 @@
+body {
+	
+}
+
+main {	
+	margin: 0 auto;
+	padding: 1em;
+	width: 90%;
+	background-color: white;
+	box-shadow: 0em 0em 0.5em gray; 	
+}
+
+
+
+.redirection-button {
+	text-decoration: none;
+	padding: 0.5em 2em;
+	
+	margin: auto;
+	background-color: green;
+	color: white;
+}
+
+.redirection-button:hover {
+	font-weight: bold;
+}
+
+figure.gallery {
+	box-shadow: 0em 0em 1em gray; 
+	color: green;
+}
+
+.gallery img {
+	width: 50%;
+}
+
+form.access-form {
+	width: 40%;
+	margin: auto;
+	padding: 1em;
+}
+
+form.access-form input {
+	width: 95%;
+	margin: 0.8em auto;
+	padding: 0.5em;
+	border-style: solid;
+	border-color: gray;
+}
+
+form.access-form input[type="submit"] {
+	
+	border-color: gray;
+	background-color: green;
+	color: white;  
+}
+form.access-form input[type="submit"]:hover {
+	
+	
+	background-color: silver;
+	color: white;  
+}
