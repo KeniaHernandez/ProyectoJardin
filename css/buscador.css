@@ -1,6 +1,6 @@
 #searchform {
-    width: 1320px;
-	  height:30px;
+    width: 1350px;
+	  height:50px;
     padding: 8px;
 	  margin:10px auto;
     background:green;
@@ -10,7 +10,7 @@
 
 #searchform input {
     width: 500px;
-	  height:20px;
+	  height:30px;
     padding: 5px;
     float: left;
     border: 0;
@@ -21,7 +21,7 @@
 
 #searchform input:focus {
     outline: 0;
-	height:21px;
+	height:30px;
     background: #fff;
     box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
 }

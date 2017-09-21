@@ -2,10 +2,10 @@
 	ul {
 
 		list-style-type: none;
-	   	margin: 0;
+	  margin-left: auto:200px;
 		padding: 0;
 		overflow: hidden;
-	        background-color:green;
+	  background-color:green;
 
 	}
 
@@ -17,7 +17,7 @@
 
 		 display: inline-block;
 		 color: white;
-		 text-align: center;
+		 text-align: right;
 		 padding: 14px 16px;
 		 text-decoration: none;
 

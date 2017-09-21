@@ -1,13 +1,13 @@
 body {
-	
+
 }
 
-main {	
+main {
 	margin: 0 auto;
 	padding: 1em;
-	width: 90%;
+	width: 100%;
 	background-color: white;
-	box-shadow: 0em 0em 0.5em gray; 	
+	box-shadow: 0em 0em 0.5em gray;
 }
 
 
@@ -15,7 +15,7 @@ main {
 .redirection-button {
 	text-decoration: none;
 	padding: 0.5em 2em;
-	
+
 	margin: auto;
 	background-color: green;
 	color: white;
@@ -26,7 +26,7 @@ main {
 }
 
 figure.gallery {
-	box-shadow: 0em 0em 1em gray; 
+	box-shadow: 0em 0em 1em gray;
 	color: green;
 }
 
@@ -35,7 +35,7 @@ figure.gallery {
 }
 
 form.access-form {
-	width: 40%;
+	width: 60%;
 	margin: auto;
 	padding: 1em;
 }
@@ -49,14 +49,14 @@ form.access-form input {
 }
 
 form.access-form input[type="submit"] {
-	
+
 	border-color: gray;
 	background-color: green;
-	color: white;  
+	color: white;
 }
 form.access-form input[type="submit"]:hover {
-	
-	
+
+
 	background-color: silver;
-	color: white;  
+	color: white;
 }

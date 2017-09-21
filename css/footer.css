@@ -1,13 +1,13 @@
 footer {
 	background-color: green;
 	color: white;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 1em;
 	box-shadow: 0em 0em 0.5em green;
 }
 footer nav {
-	width: 27%;
+	width: 30%;
 	margin: 1em;
 	display: inline-block;
 }
