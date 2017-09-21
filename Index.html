@@ -35,14 +35,18 @@
 </form>
 	<header>
 		<nav>
+			<div class="navbar-header">
+	      <a class="navbar-brand" href="#">Jardinería OKU</a>
+	    </div>
 			<ul>
-				  <li style="float:left"><a class="active" href="#inicio">Inicio</a></li>
-				 <li style="float:left"><a class="active" href="#servicios">Servicios</a></li>
-				  <li style="float:left"><a class="active" href="#productos">Productos</a></li>
-   				<li style="float:left"><a class="active" href="log-in.html">Log-In</a></li>
-				<li style="float:left"><a class="active" href="sign-up.html">Sign-Up</a></li>
+				  <li><a href="#inicio">Inicio</a></li>
+				  <li><a href="#servicios">Servicios</a></li>
+				  <li><a href="#productos">Productos</a></li>
+   				<li><a href="#contact_us">Contáctanos</a></li>
+
 				<!-- <li style="float:right"><a class="active" href="#about">Acerca de </a></li>-->
 				 <li style="float:right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_login">Ingresar</button>
+
 				<!-- <form id="searchform">
 			    <input type="text" placeholder="Buscar aqu&iacute;..." required>
 			    <button type="submit">Buscar</button>
@@ -157,7 +161,31 @@
 			</section>
 		</article>
 		<a class="redirection-button" href="gallery.html">Ver Galería</a>
+		<div class="row" id="contact_us">
+			<div class="container">
+				<h2>Contáctanos</h2>
+				<form>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+					</div>
+					<div class="form-group">
+						<label for="name">Nombre:</label>
+						<input type="text" class="form-control" id="nombre" placeholder="Ingresa texto">
+					</div>
+					<div class="form-group">
+						<label for="message">Mensaje:</label>
+						<textarea rows="4" cols="50" class="form-control" id="mensaje" placeholder="Ingresa texto">
+						</textarea>
+					</div>
 
+					<div class="checkbox">
+						<label><input type="checkbox"> Recordarme </label>
+					</div>
+					<button type="submit" class="btn btn-default">Enviar</button>
+				</form>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<section>
