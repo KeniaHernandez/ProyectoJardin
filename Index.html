@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 		<meta charset="utf-8">
@@ -13,6 +13,11 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/animate.css" media="screen" title="no title">
 		<link href="css/main.css" rel="stylesheet">
 		<script src="js/main.js" charset="utf-8"></script>
@@ -24,6 +29,8 @@
 		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/master.css">
 		<link rel="stylesheet" href="css/buscador.css">
+		<link rel="stylesheet" href="css/estilos.css">
+
 		<script type="text/javascript">
 			function mostrarInicio(){
 				document.getElementById('inicio').style.display = 'block';
@@ -46,70 +53,37 @@
 <body>
 
 
-	<form id="searchform">
-   <input type="text" placeholder="Buscar aqu&iacute;..." required>
-   <button type="submit">Buscar</button>
-</form>
+	<div class="contenedor-principal">
+			<header>
+					<div class="logo">
+							<figure>
+									<img src="img/logo.png" alt="Piezas MKP">
+									<a href="#">Piezas MKP</a>
+							</figure>
+					</div>
+					<nav>
+
+
+									 <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+									 <a href="#servicios" onclick="mostrarServicios()">Servicios</a>
+									 <a href="#productos" onclick="mostrarProductos()">Productos</a>
+									  <a href="#contact_us">Contáctanos</a></li>
+									 <a href="carrito.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
+									 <a href="log-in.html"><i class="fa fa-user" aria-hidden="true"></i>Inicia sesión o regístrate</a>
+
+							<!--<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+							<a href="catalogo.html"><i class="fa fa-book" aria-hidden="true"></i>Catálogo</a>
+							<a href="carrito.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
+							<a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Inicia sesión o regístrate</a>-->
+					</nav>
+						<form id="searchform">
+   					<input type="text" placeholder="Buscar aquí..." required="">
+   					<button type="submit">Buscar</button></form>
+			</header>
 	<header>
-		<nav>
-			<div class="navbar-header">
-	      <a class="navbar-brand" href="#">Jardinería OKU</a>
-	    </div>
-			<ul>
-				<li><a href="#inicio" onclick="mostrarInicio()" >Inicio</a></li>
-			  	<li><a href="#servicios" onclick="mostrarServicios()">Servicios</a></li>
-			  	<li><a href="#productos" onclick="mostrarProductos()">Productos</a></li>
-   				<li><a href="#contact_us">Contáctanos</a></li>
 
-				<!-- <li style="float:right"><a class="active" href="#about">Acerca de </a></li>-->
-				 <li style="float:right"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_login">Ingresar</button>
 
-				<!-- <form id="searchform">
-			    <input type="text" placeholder="Buscar aqu&iacute;..." required>
-			    <button type="submit">Buscar</button>
-			 </form>-->
-			</ul>
-		</nav>
-		<modal>
-		<!-- Modal -->
-		<div id="modal_login" class="modal fade" role="dialog">
-		  <div class="modal-dialog">
 
-		    <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Ingresar</h4>
-		      </div>
-		      <div class="modal-body">
-		         <div class="form-group">
-		            <label for="email">Email:</label>
-		            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
-		          </div>
-		          <div class="form-group">
-		            <label for="password">Contraseña:</label>
-		            <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña">
-		          </div>
-		          <div class="checkbox">
-		            <label><input type="checkbox"> Recordarme</label>
-		          </div>
-		          <button type="enviar" class="btn btn-default">Enviar</button>
-		        </form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-		      </div>
-		    </div>
-
-		  </div>
-		</div>
-		</modal>
-
-		<section>
-
-			<!--LOGO -->
-			<!--<img id="main-logo" src="img/valla.jpg">-->
-		</section>
 	</header>
 	<main>
 		<div class="container-fluid" id="inicio">
@@ -130,8 +104,8 @@
 				      	<div class="item active">
 				        	<img src="img/carretilla.jpg" alt="Chania" width="100%" height="100%">
 				        	<div class="carousel-caption">
-				          		<h3>Chania</h3>
-				          		<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+				          		<h3>Restauración de jardines</h3>
+				          		<p>Tu jardín quedará mejor que nunca! Contrata nuestros servicios</p>
 				        	</div>
 				      	</div>
 
