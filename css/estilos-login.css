@@ -1,0 +1,68 @@
+
+.formulario-login {
+	width: 70%;
+	padding: 90px;
+	background: #fff;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+ h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+	letter-spacing: 5px;
+	font-size: 36px;
+}
+
+form {
+	width: 70%;
+	max-width: 500px;
+	padding: 30px;
+	background: #2F4F4F;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.estilos-login input {
+	border: 2px solid darkgrey;
+	border-radius: 5px;
+	color:white;
+	background: rgba(0,0,0, 0.1);
+	display: block;
+	padding: 10px;
+	width: 100%;
+	margin: 40px 0;
+	font-size: 20px;
+}
+
+input[type="submit"]{
+	background: #D35D08;
+	border: 0;
+	letter-spacing: 7px;
+	cursor: pointer;
+	margin-bottom: 0px;
+}
+
+input[type="submit"]:hover{
+	background: gray;
+}
+
+input[type="submit"]:active{
+	transform: scale(0.95);
+}
+
+::-webkit-input-placeholder{
+	color: white;
+	font-weight: normal;
+	font-style: italic;
+}
+
+:-ms-input-placeholder{
+	color: white;
+	font-weight: normal;
+	font-style: italic;
+}
