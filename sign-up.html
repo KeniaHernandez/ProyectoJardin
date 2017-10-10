@@ -29,8 +29,10 @@
 		<link rel="stylesheet" href="css/buscador.css">
 		<link rel="stylesheet" href="css/estilos.css">
 		<link rel="stylesheet" href="css/estilos-login.css">
+		<link rel="stylesheet" href="css/error.css">
 		
-		<script type="test/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/forms.js"></script>
 		<script type="text/javascript">
 			function mostrarInicio(){
 				document.getElementById('inicio').style.display = 'block';
@@ -87,13 +89,13 @@
 		<fieldset>
 
 			<label for="usuario">Usuario:</label>
-			<input type="text" placeholder="&#128274; Usuario" name="">
+			<input type="text" placeholder="&#128274; Usuario" name="name">
 			<label for="email">Email:</label>
-			<input type=type="email" placeholder="&#128273; Email" name=""/>
+			<input type=type="email" placeholder="&#128273; Email" name="email"/>
 			<label for="contraseña">Contraseña:</label>
-			<input type=type="password" placeholder="&#128273; Contraseña" name=""/>
+			<input type=type="password" placeholder="&#128273; Contraseña" name="pass"/>
 			<label for="contraseña">Confirma tu contraseña:</label>
-			<input type=type="password" placeholder="&#128273; Contraseña" name=""/>
+			<input type=type="password" placeholder="&#128273; Contraseña" name="verify-pass"/>
 			<a href="rec-pass.html">¿Olvidaste tu contraseña?</a>
 			<a href="sign-up.html">Regístrate</a>
 			<button type="submit" value="INGRESAR" name="">
