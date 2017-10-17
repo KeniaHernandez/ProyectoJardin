@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<!--lee codigo css-->
+		<link type="text/css" href="css/estilo-carrito.css" rel="stylesheet" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css" media="screen" title="no title">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/main.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<link rel="stylesheet" href="css/titulo.css">
+		<link rel="stylesheet" href="css/figura.css">
+		<link rel="stylesheet" href="css/parrafos.css">
+	   <link rel="stylesheet" href="css/barra.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/master.css">
+		<link rel="stylesheet" href="css/buscador.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/estilos-login.css">
+
+		<script type="text/javascript">
+			function mostrarInicio(){
+				document.getElementById('inicio').style.display = 'block';
+				document.getElementById('servicios').style.display = 'none';
+				document.getElementById('productos').style.display = 'none';
+			}
+				function mostrarServicios(){
+				document.getElementById('servicios').style.display = 'block';
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('productos').style.display = 'none';
+			}
+			function mostrarProductos(){
+				document.getElementById('productos').style.display = 'block';
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('servicios').style.display = 'none';
+			}
+		</script>
+
+</head>
+<body>
+
+
+	<div class="contenedor-principal">
+			<header>
+					<div class="logo">
+							<figure>
+									<img src="img/logo.png" alt="Jardineria">
+									<a href="Index.html">Jardinería</a>
+							</figure>
+					</div>
+					<nav>
+									 <a href="Index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+									 <a href="Index.html" onclick="mostrarServicios()">Servicios</a>
+									 <a href="Index.html" onclick="mostrarProductos()">Productos</a>
+									  <a href="Index.html"onclick="#contact_us">Contáctanos</a></li>
+									 <a href="carrito.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
+									 <a href="log-in.html"><i class="fa fa-user" aria-hidden="true"></i>Inicia sesión o regístrate</a>
+
+							<!--<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+							<a href="catalogo.html"><i class="fa fa-book" aria-hidden="true"></i>Catálogo</a>
+							<a href="carrito.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
+							<a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Inicia sesión o regístrate</a>-->
+					</nav>
+					<form id="searchform">
+					<input type="text" placeholder="Buscar aquí..." required="">
+					<button type="submit">Buscar</button></form>
+			</header>
+
+	<main>
+		<div id="todo" class="todoNo">
+			<div id="menu" class="menuNo">
+
+
+				<!--Producto del 1 al 9-->
+				<div id="div1" name="DIVS"></div>
+				<div id="div2" name="DIVS"></div>
+				<div id="div3" name="DIVS"></div>
+				<div id="div4" name="DIVS"></div>
+				<div id="div5" name="DIVS"></div>
+				<div id="div6" name="DIVS"></div>
+				<div id="div7" name="DIVS"></div>
+				<div id="div8" name="DIVS"></div>
+				<div id="div9" name="DIVS"></div>
+
+				<!--Botones de compra-->
+				<div id="divbotones">
+					<input type="button" id="botonTotal" value="Calcular total"/>
+				 </div>
+				<!--zona de compra, tablas, formularios, etc.-->
+				<div id="divZonaCompra" class="divZonaCompraNo">
+
+					<!--Carrito de la compra-->
+					<div id="divTotal" class="divsNo">
+						<p><b>Desea modificar?</b></p>
+						<table id="tablaTotal"></table>
+					</div>
+
+					<!--Datos personales-->
+					<div id="divDatos" class="divsNo">
+						<p><b>Introduzca sus datos personales:</b></p>
+
+							<div id="divDatosPersonales0">
+								<div id="divDatosPersonales1">
+									<label>Nombre completo:</label><br/>
+									<input type="text" id="nombre" value="" size="26" /><br/>
+
+
+									<label>DNI:</label><br/>
+									<input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+					<!--Datos de pago-->
+					<div id="divPago" class="divsNo">
+						<p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+						<label>Titular de la tarjeta:</label><br/>
+						<input type="text" id="titular" value="" size="26" /><br/>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#inicio" onclick="mostrarInicio()" >Inicio</a></li>
+				  	<li><a href="#servicios" onclick="mostrarServicios()">Servicios</a></li>
+				  	<li><a href="#productos" onclick="mostrarProductos()">Productos</a></li>
+				</ul>
+
+			</nav>
+			<nav>
+				<ul>
+					<li><a href="#">Tel.999 99 99 99</a></li>
+					<li><a href="#">Fax.999 99 99 91</a></li>
+					<li><a href="#">info@jardineriaOKU.com</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul>
+					<li><a href="#contact_us">Agendar una cita</a></li>
+					<li><a href="#">Contacto </a></li>
+				</ul>
+			</nav>
+
+		</section>
+
+		<section>
+			<h5>Hecho por:
+				<ul>
+					<li>Kenia Hernández Aviña</li>
+					<li>Ulises Barba Andrade</li>
+					<li>Oscar Quintero Iñiguez</li>
+				</ul>
+			</h5>
+		</section>
+	</footer>
+</body>
+</html>
