@@ -23,6 +23,7 @@
 		<link href="css/main.css" rel="stylesheet">
 		<script src="js/main.js" charset="utf-8"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="js/forms.js"></script>
 		<link rel="stylesheet" href="css/titulo.css">
 		<link rel="stylesheet" href="css/figura.css">
 		<link rel="stylesheet" href="css/parrafos.css">
@@ -85,55 +86,64 @@
 		<div class="login-wrap">
 	<div class="login-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Ingresar</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Regístrarte</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarte</label>
 		<div class="login-form">
-			<div class="sign-in-htm">
-				<div class="group">
-					<label for="user" class="label">Nombre de usuario</label>
-					<input id="user" type="text" class="input">
-				</div>
-				<div class="group">
+			
+			<form id="log-in-form" name="log-in-form">
+				<div class="sign-in-htm">
+					<div class="group">
+						<label for="user" class="label">Nombre de usuario</label>
+						<input id="user" type="text" class="input">
+					</div>
+					<div class="group">
 
-					<label for="pass" class="label">Contraseña</label>
-					<input id="pass" type="password" class="input" data-type="password">
+						<label for="pass" class="label">Contraseña</label>
+						<input id="pass" type="password" class="input" data-type="password" onblur="isEmptyPassword(this)">
+					</div>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked>
+						<label for="check"><span class="icon"></span>Mantenerme conectado</label>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Ingresar">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<a href="#forgot">Olvidaste tu contraseña?</a>
+					</div>
 				</div>
-				<div class="group">
-					<input id="check" type="checkbox" class="check" checked>
-					<label for="check"><span class="icon"></span>Mantenerme conectado</label>
+			</form>
+			<form id="sign-up-form" name="sign-up-form">
+				<div class="sign-up-htm">
+					<div class="group">
+						<label for="user" class="label">Nombre de usuario</label>
+						<input id="user" type="text" class="input" name="user" >
+						<span id="user-tip">Favor de introducir un nombre de usuario</span>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Contraseña</label>
+						<input id="pass" type="password" class="input" data-type="password" name="pass" >
+						<span id="pass-tip">Introduce una contraseña</span>
+					</div>
+					<div class="group">
+						<label for="verify-pass" class="label">Repetir contraseña</label>
+						<input id="verify-pass" type="password" class="input" data-type="password" name="verify-pass" >
+						<span id="verify-pass-tip">Las contraseñas no coinciden</span>
+					</div>
+					<div class="group">
+						<label for="email" class="label">Correo electrónico</label>
+						<input id="email" type="text" class="input" name="email" >
+						<span id="email-tip">Favor de introducir un email</span>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Registrar">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<label for="tab-1">Recordarme?</a>
+					</div>
 				</div>
-				<div class="group">
-					<input type="submit" class="button" value="Ingresar">
-				</div>
-				<div class="hr"></div>
-				<div class="foot-lnk">
-					<a href="#forgot">Olvidaste tu contraseña?</a>
-				</div>
-			</div>
-			<div class="sign-up-htm">
-				<div class="group">
-					<label for="user" class="label">Nombre de usuario</label>
-					<input id="user" type="text" class="input">
-				</div>
-				<div class="group">
-					<label for="pass" class="label">Contraseña</label>
-					<input id="pass" type="password" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<label for="pass" class="label">Repetir contraseña</label>
-					<input id="pass" type="password" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<label for="pass" class="label">Correo electrónico</label>
-					<input id="pass" type="text" class="input">
-				</div>
-				<div class="group">
-					<input type="submit" class="button" value="Registrar">
-				</div>
-				<div class="hr"></div>
-				<div class="foot-lnk">
-					<label for="tab-1">Recordarme?</a>
-				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 </div>
@@ -171,7 +181,7 @@
 				<ul>
 					<li>Kenia Hernández Aviña</li>
 					<li>Ulises Barba Andrade</li>
-					<li>Oscar Quintero Iñiguez</li>
+					<li>Oscar Alejandro Quintero Iñiguez</li>
 				</ul>
 			</h5>
 		</section>
