@@ -36,23 +36,7 @@
 		<link rel="stylesheet" href="css/error.css">
 
 
-		<script type="text/javascript">
-			function mostrarInicio(){
-				document.getElementById('inicio').style.display = 'block';
-				document.getElementById('servicios').style.display = 'none';
-				document.getElementById('productos').style.display = 'none';
-			}
-				function mostrarServicios(){
-				document.getElementById('servicios').style.display = 'block';
-				document.getElementById('inicio').style.display = 'none';
-				document.getElementById('productos').style.display = 'none';
-			}
-			function mostrarProductos(){
-				document.getElementById('productos').style.display = 'block';
-				document.getElementById('inicio').style.display = 'none';
-				document.getElementById('servicios').style.display = 'none';
-			}
-		</script>
+		<script type="text/javascript" src="js/navigation-bar.js"></script>
 
 </head>
 <body>
@@ -100,7 +84,7 @@
 					<div class="group">
 
 						<label for="pass" class="label">Contraseña</label>
-						<input id="pass" type="password" class="input" data-type="password" onblur="isEmptyPassword(this)">
+						<input id="pass" type="password" class="input" data-type="password" >
 					</div>
 					<div class="group">
 						<input id="check" type="checkbox" class="check" checked>
