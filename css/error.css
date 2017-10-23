@@ -1,9 +1,16 @@
 .error {
-   border-color: red;
-   color: red;
+	background-color: rgba(30,0,0,0.1);
+	border-style: solid;
+    border-color: red;
+    color: gray;
+
    
 }
 
 span.error {
-  
+
+    background-color: transparent;
+    border-style: none;
+    color: red;
+    font-style: italic;  
 }
