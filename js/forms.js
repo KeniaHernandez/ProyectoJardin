@@ -1,40 +1,90 @@
 //var $inputs = $('');
-function isEmpty(input)
+function modifyCSSIfIsEmpty(input, elementTip)
 {
 	if(input.value == "")
 	{
-		//input.style.backgroundColor = "red";
-		//input.style.borderStyle = "solid";
-		//input.style.borderColor = "red";
-		input.addClass("error");
+		console.log(input.style);
+		input.style.backgroundColor = "rgba(30,0,0,0.1)";
+		input.style.borderStyle = "solid";
+		input.style.borderColor = "red";
+		input.style.color = "gray";
+		//input.classList.add("error");
+
+		elementTip.style.display = "block";
 
 	}else{
 
 	}
 }
-function isEmptyUser()
+
+function validateUser()
 {
-	console.log('isEmptyUser function');
-	isEmpty(this);
-}
-function isEmptyPassword()
-{
-	console.log('isEmptyPassword function');
-	isEmpty(this);
-}
-function verifyPassword()
-{
-	console.log('verifyPassword function');
-	var originalPasswordInput = document.getElementById('pass');
-	if(this.value == "" || this.value != originalPasswordInput.value)
+	console.log("validateUser function");
+
+	if (this.value == "" ) 
 	{
-		this.style.backgroundColor = "red";
+		this.style.backgroundColor = "rgba(30,0,0,0.1)";
+		this.style.borderStyle = "solid";
+		this.style.borderColor = "red";
+		this.style.color = "gray";
+
+		userTip.style.display = "block";
+	}else{
+		this.style = oldStyleInput;
+		userTip.style.display = "none";
 	}
 }
-function isEmptyEmail()
+function validateOriginalPassword()
 {
-	console.log('isEmptyEmail function');
-	isEmpty(this);
+	console.log("validateOriginalPassword function");
+
+	if (this.value == "" ) 
+	{
+		this.style.backgroundColor = "rgba(30,0,0,0.1)";
+		this.style.borderStyle = "solid";
+		this.style.borderColor = "red";
+		this.style.color = "gray";
+
+		originalPasswordTip.style.display = "block";
+	}else{
+		this.style = oldStyleInput;
+		originalPasswordTip.style.display = "none";
+	}
+}
+function validateVerifyPassword()
+{
+	console.log('validateVerifyPassword function');
+	
+	if(/*this.value == "" ||*/ this.value != originalPasswordInput.value)
+	{
+		
+		this.style.backgroundColor = "rgba(30,0,0,0.1)";
+		this.style.borderStyle = "solid";
+		this.style.borderColor = "red";
+		this.style.color = "gray";
+
+		verifyPasswordTip.style.display = "block";
+	}else{
+		this.style = oldStyleInput;
+		verifyPasswordTip.style.display = "none";
+	}
+}
+function validateEmail()
+{
+	console.log('validateEmail function');
+
+	if (this.value == "" ) 
+	{
+		this.style.backgroundColor = "rgba(30,0,0,0.1)";
+		this.style.borderStyle = "solid";
+		this.style.borderColor = "red";
+		this.style.color = "gray";
+
+		emailTip.style.display = "block";
+	}else{
+		this.style = oldStyleInput;
+		emailTip.style.display = "none";
+	}
 }
 
 //---------------------------------------------------------------------------------------------------
@@ -45,21 +95,28 @@ window.onload = function()
 	console.log("Creando variables de los elementos de los form...");
 	var logInForm = document.getElementById('log-in-form');
 	var signUpForm = document.getElementById('sign-up-form');
-	var userInput = signUpForm.user;
-	var originalPasswordInput = signUpForm.pass;
-	var verifyPasswordInput = document.getElementById('verify-pass');
-	var emailInput = signUpForm.email;
+	userInput = signUpForm.user;
+	originalPasswordInput = signUpForm.pass;
+	verifyPasswordInput = document.getElementById('verify-pass');
+	emailInput = signUpForm.email;
 
-	var userTip = document.getElementById('user-tip');
-	var originalPasswordTip = document.getElementById('pass-tip');
-	var verifyPasswordTip = document.getElementById('verify-pass-tip');
-	var emailTip = document.getElementById('email-tip');
+	oldStyleInput = userInput.style;
+	console.log("Estilo original de los inputs: "+oldStyleInput);
+
+	userTip = document.getElementById('user-tip');
+	originalPasswordTip = document.getElementById('pass-tip');
+	verifyPasswordTip = document.getElementById('verify-pass-tip');
+	emailTip = document.getElementById('email-tip');
 
 	console.log('Asignando eventos a los inputs...');
-	userInput.onblur = isEmptyUser;
-	originalPasswordInput.onblur = isEmptyPassword;
-	verifyPasswordInput.onblur = verifyPassword;
-	emailInput.onblur = isEmptyEmail;
+	userInput.onblur = validateUser;
+	userInput.onchange = validateUser;
+	originalPasswordInput.onblur = validateOriginalPassword;
+	originalPasswordInput.onchange = validateOriginalPassword;
+	verifyPasswordInput.onblur = validateVerifyPassword;
+	verifyPasswordInput.onchange = validateVerifyPassword;
+	emailInput.onblur = validateEmail;
+	emailInput.onchange = validateEmail;
 
 	console.log('Ocultando mensajes span...');
 
