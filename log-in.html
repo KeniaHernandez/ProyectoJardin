@@ -33,6 +33,8 @@
 		<link rel="stylesheet" href="css/buscador.css">
 		<link rel="stylesheet" href="css/estilos.css">
 		<link rel="stylesheet" href="css/estilos-login.css">
+		<link rel="stylesheet" href="css/error.css">
+
 
 		<script type="text/javascript">
 			function mostrarInicio(){
@@ -118,22 +120,22 @@
 					<div class="group">
 						<label for="user" class="label">Nombre de usuario</label>
 						<input id="user" type="text" class="input" name="user" >
-						<span id="user-tip">Favor de introducir un nombre de usuario</span>
+						<span id="user-tip" class="error">Favor de introducir un nombre de usuario</span>
 					</div>
 					<div class="group">
 						<label for="pass" class="label">Contraseña</label>
 						<input id="pass" type="password" class="input" data-type="password" name="pass" >
-						<span id="pass-tip">Introduce una contraseña</span>
+						<span id="pass-tip" class="error">Introduce una contraseña</span>
 					</div>
 					<div class="group">
 						<label for="verify-pass" class="label">Repetir contraseña</label>
 						<input id="verify-pass" type="password" class="input" data-type="password" name="verify-pass" >
-						<span id="verify-pass-tip">Las contraseñas no coinciden</span>
+						<span id="verify-pass-tip" class="error">Las contraseñas no coinciden</span>
 					</div>
 					<div class="group">
 						<label for="email" class="label">Correo electrónico</label>
 						<input id="email" type="text" class="input" name="email" >
-						<span id="email-tip">Favor de introducir un email</span>
+						<span id="email-tip" class="error">Favor de introducir un email</span>
 					</div>
 					<div class="group">
 						<input type="submit" class="button" value="Registrar">
